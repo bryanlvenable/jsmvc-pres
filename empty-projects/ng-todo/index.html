@@ -23,6 +23,7 @@
           <i class="glyphicon glyphicon-list-alt"></i>
         </span>
         <input ng-model="newTask" placeholder="New Todo" class="form-control" type="text"><!-- model  -->
+        {{ newTask | altCaps }}
         <span class="input-group-btn">
           <button ng-click="addNewTask()" class="btn btn-success" type="button"><!-- click  -->
             <i class="glyphicon glyphicon-plus"></i>
