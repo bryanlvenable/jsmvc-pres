@@ -18,6 +18,11 @@ Todos.TodosController = Ember.ArrayController.extend({
       });
       this.set('newTodo', '');
       todo.save();
+    },
+    clearCompleted: function() {
+      var completed = this.filterBy('completed', true);
+      completed.invoke('deleteRecord');
+      completed.invoke('save');
     }
   }
 });
