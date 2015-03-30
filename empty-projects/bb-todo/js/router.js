@@ -1,5 +1,5 @@
-window.TodoApp = new (backbone.Router.extend({
-  routes: {'': 'index'},
+window.TodoApp = new (Backbone.Router.extend({
+  routes: {'' : 'index'},
   index: function() {
 
   },
