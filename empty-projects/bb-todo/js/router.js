@@ -1,8 +1,8 @@
 window.TodoApp = new (Backbone.Router.extend({
   routes: {'' : 'index'},
   initialize: function() {
-    this.todoItems = TodoItems();
-    this.todosView = TodosView({collection: this.todoItems});
+    this.todoItems = new TodoItems();
+    this.todosView = new TodosView({collection: this.todoItems});
     this.todosView.render();
   },
   index: function() {
